@@ -27,4 +27,4 @@ jobs:
           target: prod_image
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/diploma_dy:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/Diploma_DY:latest
