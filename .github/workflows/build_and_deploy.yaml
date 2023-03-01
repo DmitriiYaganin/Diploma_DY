@@ -43,4 +43,4 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: docker push
-        run: docker push /diploma_dy:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+        run: docker push dmitriiyaganin/diploma_dy:$GITHUB_REF_NAME-$GITHUB_RUN_ID
