@@ -33,6 +33,7 @@ services:
     volumes:
       - ./todolist:/opt/todolist
 
+
   collect_static:
     build:
       target: dev_image
@@ -41,6 +42,7 @@ services:
     volumes:
       - django_static:/opt/static/
     command: python manage.py collectstatic -c --no-input
+
 
   frontend:
     image: sermalenk/skypro-front:lesson-34
